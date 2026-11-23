@@ -1,8 +1,29 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>隐私政策 · 毛孩日记</title>
-<style>body{font-family:-apple-system,"PingFang SC","Noto Sans SC",sans-serif;max-width:720px;margin:0 auto;padding:24px 18px;line-height:1.75;color:#222}h1{font-size:24px}h2{font-size:17px;margin-top:24px}a{color:#ea580c}</style></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Pawlog 毛孩日记</title>
+<style>body{font-family:-apple-system,"Helvetica Neue","PingFang SC","Noto Sans SC",sans-serif;max-width:720px;margin:0 auto;padding:24px 18px;line-height:1.75;color:#222}h1{font-size:24px}h2{font-size:17px;margin-top:24px}a{color:#ea580c}nav a{margin-right:14px}section+section{border-top:1px solid #eee;margin-top:36px;padding-top:12px}</style></head>
 <body>
+<nav><a href="#en">English</a><a href="#zh">中文</a></nav>
+<main id="docs">
+<section id="en" lang="en">
+<h1>Pawlog Privacy Policy</h1>
+<p>Last updated: November 23, 2026</p>
+<h2>1. We don't collect your data</h2>
+<p>Everything you enter in Pawlog (pet profiles, photos, health entries, reminders, expenses) is stored only on your own device. It is never uploaded to our servers, and we cannot see it.</p>
+<h2>2. Photos</h2>
+<p>Photos you choose for your pets are compressed and stored on your device, used only to display them in the app and to create pet ID cards.</p>
+<h2>3. Notifications</h2>
+<p>Reminders use your device's local notifications and never pass through any server. You can turn them off anytime in your device settings.</p>
+<h2>4. Purchases</h2>
+<p>In-app purchases are handled by the Apple App Store or Google Play. We never receive your payment information.</p>
+<h2>5. Deleting data</h2>
+<p>Go to Me → Erase all data to delete everything. Uninstalling the app also deletes all local data.</p>
+<h2>6. Children</h2>
+<p>This app does not knowingly collect any information from children under 13.</p>
+<h2>7. Contact</h2>
+<p>Questions? Email <a href="mailto:xuxing@xingzhun.org">xuxing@xingzhun.org</a>.</p>
+</section>
+<section id="zh" lang="zh-CN">
 <h1>毛孩日记 隐私政策</h1>
 <p>更新日期：2026 年 11 月 23 日</p>
 <h2>1. 我们不收集你的数据</h2>
@@ -19,5 +40,13 @@
 <p>本 App 不面向 13 岁以下儿童收集任何信息。</p>
 <h2>7. 联系我们</h2>
 <p>如有问题请发邮件至 <a href="mailto:xuxing@xingzhun.org">xuxing@xingzhun.org</a>。</p>
-<p></p>
+</section>
+</main>
+
+<script>
+// 中文系统把中文放前面
+if (/^zh/i.test(navigator.language || "") || localStorage.getItem("pawlog.lang") === "zh-Hans" || localStorage.getItem("pawlog.lang") === "zh-Hant") {
+  var m = document.getElementById("docs"); m.insertBefore(document.getElementById("zh"), m.firstChild);
+}
+</script>
 </body></html>
